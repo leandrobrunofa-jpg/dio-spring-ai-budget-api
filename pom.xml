@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://apache.org" xmlns:xsi="http://w3.org"
+	xsi:schemaLocation="http://apache.org https://apache.org">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.5</version>
+		<relativePath/>
+	</parent>
+	<groupId>com.dio</groupId>
+	<artifactId>budget-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>budget-api</name>
+	<description>API Inteligente com Reconhecimento de Fala da DIO</description>
+	<properties>
+		<java.version>17</java.version>
+		<spring-ai.version>0.8.1</spring-ai.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-openai-spring-starter</artifactId>
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-bom</artifactId>
+			<version>${spring-ai.version}</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependencies>
+	</dependencyManagement>
+</project>
